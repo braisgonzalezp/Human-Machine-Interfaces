@@ -1,0 +1,324 @@
+/* Token de diseño utilizado Formstack, la cual nos proporciono fuente de texto y paleta de colores*/
+
+@import url(//db.onlinewebfonts.com/c/1572b251b0319fdd12219a000aad6196?family=Sofia+Pro+Black);
+@import url(//db.onlinewebfonts.com/c/a8dec92a66e2f364e9f87170fdcb9bea?family=Rubik+Light);
+
+@font-face {font-family: "Sofia Pro Black";
+    src: url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.eot");
+    src: url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/1572b251b0319fdd12219a000aad6196.svg#Sofia Pro Black") format("svg"); }
+
+@font-face {font-family: "Rubik Light";
+    src: url("//db.onlinewebfonts.com/t/a8dec92a66e2f364e9f87170fdcb9bea.eot");
+    src: url("//db.onlinewebfonts.com/t/a8dec92a66e2f364e9f87170fdcb9bea.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/a8dec92a66e2f364e9f87170fdcb9bea.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/a8dec92a66e2f364e9f87170fdcb9bea.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/a8dec92a66e2f364e9f87170fdcb9bea.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/a8dec92a66e2f364e9f87170fdcb9bea.svg#Rubik Light") format("svg"); }
+
+* {
+    background-color:#EBFAF2;
+}
+
+/*Casos comunes a todos los dispositivos*/
+
+.galeria {
+    height: calc( 400px + 3em);
+    max-width: 100%;
+    margin:3em;
+    object-fit: inherit;
+    border: 1px solid #555;
+    position: relative;
+    display:block;
+}
+
+.galeria img {
+    width: 100%;
+    height: 400px;
+    object-fit: inherit;
+    object-position: TOP;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#portada {
+    width: 100%;
+    height: 1%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+body {
+    font-family: 'Rubik Light', sans-serif;
+    font-size: 0.875em;
+}
+
+
+header{
+    font-family: 'Sofia Pro Black', sans-serif;
+    color: white;
+    height: 100%;
+}
+
+header h1{
+    background: #0F9961;
+    text-align: center;
+    padding: 5px;
+    font-size: 3em;
+}
+
+section p{
+    font-family: 'Rubik Light', sans-serif;
+}
+
+
+form{
+    font-family: 'Rubik Light', sans-serif;
+    padding: 10px;
+    width: 80%;
+    margin-top: 0px;
+}
+
+section h2{
+    font-family: 'Sofia Pro Black', sans-serif;
+    color: white;
+    background: #8FD6B0;
+    font-size: 2em;
+}
+
+input, select {
+    font-family: 'Rubik Light', sans-serif;
+}
+
+footer{
+    background: #EDF2F5;
+    display: flex;
+    justify-content: space-around;
+}
+
+section {
+    margin:  0 0.5em;
+}
+
+div {
+    margin:  0 0.5em;
+}
+
+form label, form button {
+    margin-top:  1em;
+}
+
+#boton{
+    margin:  1.5em 2.5em;
+    border: 0;
+    background-color: #0F9961;
+    color: white;
+    padding: 0.5em 1em;
+}
+
+form button {
+    border: 0;
+    background-color: #0F9961;
+    color: white;
+    padding: 0.5em 1em;
+}
+
+.error {
+    background-color: darkred;
+    color:  white;
+    padding: 0.2em 0.4em;
+    font-weight: bold;
+}
+
+.description {
+    border:  solid 1px slategray;
+    padding: 0.2em 0.4em;
+}
+
+.hidden {
+    display: none;
+}
+
+
+@media only screen and (min-width: 1025px) { /*Caso para escritorio*/
+
+    #open{
+        display: none;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0px;
+    }
+
+    #columnas{
+        margin: 0px;
+    }
+
+    #col1{
+        float:left;
+        margin:0px;
+        width: 47%;
+    }
+
+    .modal-container{
+        float: right;
+        width: 50%;
+        margin:4px;
+    }
+
+    .modal-container h2{
+        font-family: 'Sofia Pro Black', sans-serif;
+        color: white;
+        background: #8FD6B0;
+        font-size: 2em;
+    }
+
+
+    form{
+        font-family: 'Rubik Light', sans-serif;
+    }
+
+
+    footer{
+        background: #EDF2F5;
+        display: flex;
+        justify-content: space-around;
+        clear: both;
+    }
+
+
+    section {
+        margin:  0em;
+    }
+
+    form input, form label{
+        display:  block;
+    }
+
+
+}
+@media only screen and (max-width: 1024px) and (min-width: 769px){/*Caso para tablet*/
+
+    #open{
+        display: none;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    h2{
+        font-family: 'Sofia Pro Black', sans-serif;
+        color: white;
+        background: #8FD6B0;
+        font-size: 2em;
+    }
+
+    form{
+        font-family: 'Rubik Light', sans-serif;
+    }
+
+    .modal-container{
+        height: 50%;
+        width: 100%;
+    }
+
+    #col1{
+        height: 50%;
+        width: 100%;
+    }
+
+    section {
+        margin:  0em;
+    }
+
+    form input, form label{
+        display:  block;
+    }
+}
+@media only screen and (max-width: 768px) {/*Caso para móvil*/
+
+    #open {
+        margin: 1.5em 2.5em;
+        border: 0;
+        background-color: #0F9961;
+        color: white;
+        padding: 0.5em 1em;
+        cursor: pointer;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+
+    .modal-container h2{
+        margin-bottom: 0px;
+        width: 83%;
+        font-family: 'Sofia Pro Black', sans-serif;
+        color: white;
+        background: #8FD6B0;
+        font-size: 2em;
+
+    }
+
+    #columnas{
+        height: 100%;
+        width: 100%;
+    }
+
+    section h2{
+        font-family: 'Sofia Pro Black', sans-serif;
+        color: white;
+        background: #8FD6B0;
+        font-size: 2em;
+    }
+
+    form{
+        font-family: 'Rubik Light', sans-serif;
+        padding: 10px;
+        width: 80%;
+        margin-top: 0px;
+    }
+
+    #col1{
+        height: 100%;
+        width: 100%;
+    }
+
+    .modal-container{
+        background-color: rgba(0, 0, 0, 0.3);
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        pointer-events: none;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+
+
+    form input, form label{
+        display:  flex;
+    }
+
+    .show{
+        pointer-events: auto;
+        opacity: 1;
+    }
+
+}
+
+
+
+

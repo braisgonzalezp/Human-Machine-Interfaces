@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Group27 WebPage</title>
+        <meta charset="UTF-8">
+        <meta name="title" content="Group27 WebPage">
+        <meta name="description" content="Esta web es un una práctica diseñada para la Práctica 3 de IPM.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+        <link href="https://db.onlinewebfonts.com/c/1572b251b0319fdd12219a000aad6196?family=Sofia+Pro+Black" rel="stylesheet" type="text/css">
+        <link href="https://db.onlinewebfonts.com/c/a8dec92a66e2f364e9f87170fdcb9bea?family=Rubik+Light" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body >
+        <header>
+                <h1>Navidad Vigo 2022</h1>
+        </header>
+        <img id="portada" src="assets/foto6.jpg" width="2000" height="400" alt="Foto portada Navideña">
+
+        <div id="columnas">
+            <div id="col1">
+        <section>
+            <h2>Este año</h2>
+            <p>Once millones de luces led, un mercadillo navideño, atracciones de feria y escenarios ideales para
+                selfis. Esos son algunos de los ingredientes de estas Navidades de Vigo 2022- 2023 que después de
+                dos años de pandemia regresan con fuerza. El pistoletazo de salida lo dio el alcalde el pasado 19
+                de noviembre y desde entonces la ciudad luce sus mejores galas para disfrute de vigueses y
+                visitantes. Las luces de Navidad de Vigo 2022 han convertido la ciudad en un referente del turismo
+                nacional en estas fechas, por lo que encontrar donde dormir barato en la ciudad puede complicarse.
+                Los precios se disparan si se toma como ejemplo el fin de semana del 10 y 11 de diciembre, aunque
+                según avanza el calendario aún es posible encontrar noches de hotel a precios económicos en Vigo para
+                disfrutar de la Navidad. Aquí te explicamos todas las opciones que tienes para dormir y disfrutar de
+                las fiestas en Vigo, cuya agenda y guía completa te contamos aquí.</p>
+
+
+            <ul id="listaP">
+
+                <li><img src="/assets/imagen.jpg" width="250" height="30" alt="logo universidad"></li>
+                <li><p>Pagina web realizada por estudiantes de la Universidad de A Coruña. <br>Si no te quieres perder lo más importante, debes quedarte con el nombre de estas cuatro calles:
+                    Policarpo Sanz, Alameda, Areal y Porta do Sol. En la primera los adornos se centran los adornos, en
+                    la segunda puedes encontrar el mercadillo navideño, en la zona de Areal se concentran las
+                    atracciones para los más pequeños y en Porta do Sol está el gran árbol de Navidad, entre otros
+                    adornos. Para poder disfrutar de todo ello, los fines de semana la parte de la zona centro será
+                    peatonal, por lo que deberás tener en cuenta los cortes de tráfico para moverte.</p></li>
+
+              </ul>
+        </section>
+            </div>
+
+        <div class="modal-container" id="modal_container">
+            <h2>Formulario de Visita</h2>
+
+        <form id="formulario">
+
+            <label for="field1">Nombre del Cliente</label>
+            <input type="text" id="field1" pattern="[A-Za-z ]" placeholder="Sólo letras [a-Z]" required>
+            <p id="field1Error" class="error hidden">Nombre incorrecto</p>
+
+
+            <label for="start">Fecha de visita:</label>
+            <input type="date" id="start" name="trip-start"
+                   min="2023-08-22" max="2123-08-22">
+
+
+            <label for="personas">Número de Personas</label>
+            <input type="number" id="personas" name="personas"
+                          min="1" max="10" required >
+
+
+            <label for="personas">Momento de la visita</label>
+            <label for="field2"></label>
+            <select id="field2" required>
+                <option selected value="" disabled>Escoge una opción</option>
+                <option value="0">Mañana</option>
+                <option value="1">Tarde</option>
+                <option value="2">Noche</option>
+            </select>
+
+            <input id="boton" type="submit" value="Submit">
+        </form>
+        </div>
+        </div>
+        <button id="open">Formulario</button>
+        <footer>
+            <h5> © Webpage designed by: Armando Noya, Raúl Fernández y Brais González (2020-2022)</h5>
+        </footer>
+        <script src="mainjs.js"></script>
+    </body>
+</html> 
