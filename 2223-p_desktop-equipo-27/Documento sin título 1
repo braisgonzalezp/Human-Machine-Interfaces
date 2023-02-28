@@ -1,0 +1,10 @@
+hacer apra cada router:
+hostame nombre
+no ip domain lookup
+en modo config-line: logging synchronous 
+
+ENTRAR CONF INTERFAZ: interfaz nombre(gigabitethernet 0/0) o int g0/0
+
+asignar ip:ip address ip ip mascara  
+
+activar interfaz: no shutdown
